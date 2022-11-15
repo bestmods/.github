@@ -2,8 +2,9 @@
 Browse the best mods in gaming from many sources on the Internet!
 
 <a href="https://bestmods.io/" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview.jpeg" /></a>
-<a href="https://bestmods.io/view/csgoesp" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" /></a>
-<a href="https://bestmods.io/view/csgoesp?view=install" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" /></a>
+<a href="https://bestmods.io/view/cs-dynamicslots" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" /></a>
+<a href="https://bestmods.io/view/cs-dynamicslots/install" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" /></a>
+<a href="https://bestmods.io/view/cs-dynamicslots/downloads" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview4.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview4.jpeg" /></a>
 
 [BestMods.io](https://bestmods.io/)
 
@@ -15,7 +16,7 @@ Help support this project and modding in general by spreading the word!
 ## Road Map
 A road map for the website may be found [here](https://github.com/orgs/BestMods/projects/1)! Each view represents a month and all items within that view is projected to be completed by the end of the specific month.
 
-## Installation, Debug, & Deployment
+## Installation & Deployment
 The project utilizes [Laravel](https://laravel.com/), [Tailwind CSS](https://tailwindcss.com/), [jQuery](https://jquery.com/), and [DataTables](https://datatables.net/) (for listing mods). Installation on a Linux server is fairly simple. However, I'd recommend making sure you have at least NodeJS `16.x`, Composer `2.2.x`, and NPM `8.x.x`.
 
 ```bash
@@ -49,6 +50,9 @@ php artisan key:generate
 # Migrate database.
 php artisan migrate
 
+# Seed database.
+php artisan db:seed
+
 # Build CSS and JS files.
 npm run build
 
@@ -56,6 +60,9 @@ npm run build
 php artisan serve
 
 # For production, set debug to false in .env file and use a proper web server such as NGINX or Apache!
+
+# SETUP AUTH0 AND PUT INFO IN .env FILE.
+
 ```
 
 ## Community
