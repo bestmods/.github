@@ -2,21 +2,36 @@
 Browse the best mods in gaming from many sources on the Internet!
 
 <a href="https://bestmods.io/" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview.jpeg" /></a>
-<a href="https://bestmods.io/view/csgoesp" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" /></a>
-<a href="https://bestmods.io/view/csgoesp?view=install" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" /></a>
-
-[BestMods.io](https://bestmods.io/)
 
 ## About This Project
-An open-source [website](https://bestmods.io) and project made by [Christian Deacon](https://github.com/gamemann) that helps users find their favorite mods. This project is powered by the [@modcommunity](https://github.com/modcommunity)!
+An open-source [website](https://bestmods.io) made by [Christian Deacon](https://github.com/gamemann) that helps users find their favorite mods.
 
-Help support this project and modding in general by spreading the word!
+Please also check out the [@modcommunity](https://github.com/modcommunity)! They are doing things that will change the direction of gaming on a large scale by using modding and open source like never seen before!
 
 ## Road Map
-A road map for the website may be found [here](https://github.com/orgs/BestMods/projects/1)! Each view represents a month and all items within that view is projected to be completed by the end of the specific month.
+A road map for the website may be found [here](https://github.com/bestmods/roadmap/issues)!
 
-## Installation, Debug, & Deployment
+Each GitHub project represents a quarter and lists all things we're hoping to get completed by the end of said quarter.
+
+## Contributing
+Any help from the open source community is highly appreciated on this project! We utilize the following.
+
+* [Laravel](https://laravel.com/) (PHP and Back-End).
+* [Tailwind CSS](https://tailwindcss.com/) (HTML, CSS, and Front-End).
+* [jQuery](https://jquery.com/) (JavaScript and Front-End).
+* [DataTables](https://datatables.net/) (awesome jQuery library for loading millions of entries in a table).
+
+Please take a look at our [road map](https://github.com/bestmods/roadmap/issues) and join our [Discord server](https://discord.moddingcommunity.com/) for communication!
+
+## Our Community
+[Best Mods](https://bestmods.io) is ran by the [The Modding Community](https://moddingcommunity.com/) which is a newer project taking modding to the next level by offering a unique marketplace, server and community browser & discovery, and forum! We have a Discord [here](https://discord.moddingcommunity.com/) if you want to socialize and interact with others including talented modders and content creators.
+
+Additionally, you may also use our discussions forum [here](https://github.com/orgs/BestMods/discussions)!
+
+## Installation & Deployment
 The project utilizes [Laravel](https://laravel.com/), [Tailwind CSS](https://tailwindcss.com/), [jQuery](https://jquery.com/), and [DataTables](https://datatables.net/) (for listing mods). Installation on a Linux server is fairly simple. However, I'd recommend making sure you have at least NodeJS `16.x`, Composer `2.2.x`, and NPM `8.x.x`.
+
+Additionally, we currently use [Auth0](https://auth0.com/) for authentication with a custom role-based system. Uses with the `Admin` role may create mods, seeds, and games through the `/create` route.
 
 ```bash
 # Install PHP and required packages.
@@ -49,6 +64,9 @@ php artisan key:generate
 # Migrate database.
 php artisan migrate
 
+# Seed database.
+php artisan db:seed
+
 # Build CSS and JS files.
 npm run build
 
@@ -56,15 +74,14 @@ npm run build
 php artisan serve
 
 # For production, set debug to false in .env file and use a proper web server such as NGINX or Apache!
+
+# SETUP AUTH0 AND ADJUST DETAILS IN .env FILE.
 ```
 
-## Community
-Best Mods is ran by the [The Modding Community](https://ModdingCommunity.com/) which is a newer project taking modding to the next level by offering a unique marketplace, server and community browser & discovery, and forum! We have a Discord [here](https://dsc.gg/modcommunity) if you want to socialize and interact with others including talented modders and content creators.
-
-Additionally, for Best Mods specifically, you may also use our discussions forum on GitHub [here](https://github.com/orgs/BestMods/discussions)!
-
-### Contributions
-Contributions are always welcomed! Feel free to submit pull requests if you see anything that may be improved or you want to help out with the project in general!
+## Showcase
+<a href="https://bestmods.io/view/cs-dynamicslots" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview2.jpeg" /></a>
+<a href="https://bestmods.io/view/cs-dynamicslots/install" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview3.jpeg" /></a>
+<a href="https://bestmods.io/view/cs-dynamicslots/downloads" target="_blank"><img src="https://github.com/BestMods/bestmods/blob/master/preview4.jpeg" data-canonical-src="https://github.com/BestMods/bestmods/blob/master/preview4.jpeg" /></a>
 
 ## Credits
 * [Christian Deacon](https://github.com/gamemann) - Creator
