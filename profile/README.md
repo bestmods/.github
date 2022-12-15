@@ -94,4 +94,5 @@ php artisan serve
 
 ## Credits
 * [Christian Deacon](https://github.com/gamemann) - Creator
+* [Jaryt](https://github.com/jaryt)
 * [The Modding Community](https://github.com/modcommunity)
